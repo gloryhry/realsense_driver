@@ -1,0 +1,18 @@
+<launch>
+    <node pkg="realsense_driver" type="realsense_driver" name="realsense_driver_node1" output="screen">
+        <param name="enable_color" type="bool" value="true" />
+        <param name="enable_depth" type="bool" value="true" />
+        <param name="enable_infrared" type="bool" value="true" />
+        <param name="camera_serials" type="string" value="238222072365" />
+        <param name="camera_number" type="int" value="1" />
+    </node>
+
+    <node pkg="realsense_driver" type="realsense_driver" name="realsense_driver_node2" output="screen">
+        <param name="enable_color" type="bool" value="true" />
+        <param name="enable_depth" type="bool" value="true" />
+        <param name="enable_infrared" type="bool" value="true" />
+        <param name="camera_serials" type="string" value="238222072365" />
+        <param name="camera_number" type="int" value="2" />
+    </node>
+
+</launch>
